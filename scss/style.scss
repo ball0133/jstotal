@@ -1,0 +1,189 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+/* = Normalize 
+-------------------------------------------------------------------------------------------------------------------- */
+@import "normalize";
+
+
+/* = Variables 
+-------------------------------------------------------------------------------------------------------------------- */
+@import "variables";
+
+
+/* = Mixins 
+-------------------------------------------------------------------------------------------------------------------- */
+@import "mixins";
+
+
+
+
+
+/* = Base
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'base';
+
+
+/* = Grid
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'grid';
+
+
+/* = Header
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'header';
+
+
+/* = Main Navigation
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'main-navigation';
+
+
+/* = Footer
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'footer';
+
+
+/* = Print
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'print';
+
+hgroup{
+    text-align: center;
+    padding-top: 60px;
+    
+    h1{
+        font-size: 3em; 
+        font-weight: 300;
+        font-family: $alegreya;
+    }
+    .title{
+        color: $green;
+        background-color: $green;
+        height: 3px;
+        margin-bottom: 40px;
+        margin-top: -20px;
+        width: 90px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+    .type{
+        font-weight: 700;    
+    }
+    h2{
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-top: -15px;
+        color: white;
+        font-weight: 300;
+        font-family: $alegreya;
+    }
+}
+
+h3,h4{
+    font-family: $alegreya;
+    font-weight: 400;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.2em;
+}
+
+.col-4{
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+    hgroup{
+        padding: 150px;
+        h1{
+            font-size: 3em; 
+            font-weight: 300;
+        }
+        .type{
+            font-weight: 700;    
+        }
+        h2{
+            font-size: 1.8em;
+            line-height: 1.4em;
+            color: white;
+            font-weight: 300;
+        }
+    }
+}
+.col-3 h3{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.icon-pen,.icon-clip,.icon-settings{
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;    
+}
+
+hr{
+    color: #ccc;
+    background-color: $gray;
+    height: 1px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.btn{
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $alegreya;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 7px 10px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    width: 100%; /* auto */
+    text-align: center; /* DELETE WHEN WIDTH AUTO */
+
+  &.green {
+    background: none repeat scroll 0 0 $green;
+    color: #fff;
+    &:hover {
+      background: none repeat scroll 0 0 $gray;
+      color: #fff;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 703px){
+    .padding {
+      margin-bottom: 33px;
+    }
+    .button{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: $breakpoint-large) {
+    .space {
+      margin-bottom: 32px;
+    }
+    .padding{
+        margin-bottom: 49px;    
+    }
+}

@@ -1,0 +1,21 @@
+.masthead{
+	background: url(../img/bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;    
+    max-width: 100%;
+    height: 300px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+    
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+.masthead{
+    height: 500px;
+    margin-bottom: 30px;  
+}
+    
+}
+

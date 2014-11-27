@@ -1,0 +1,39 @@
+footer{  
+    background-color: $green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    
+    p{
+        text-align: center;
+        font-size: .75em;
+    }
+    h5{
+        text-align: center;
+    }
+}
+
+html{
+    position: relative;
+    min-height: 100%;    
+}
+
+body{
+    margin: 0 0 300px;
+    
+}
+
+.foot{
+    @extend .clearfix;
+}
+
+
+@media only screen and (min-width: $breakpoint-small) {
+
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+
+}
